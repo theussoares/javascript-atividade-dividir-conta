@@ -65,33 +65,6 @@ Os seguintes produtos e seus respectivos preços são considerados no cálculo:
     O valor total deu ímpar, vamos dividir tudo, Y para cada um.
     ```
 
-## Código de Exemplo
-
-```javascript
-const refrigerantePreco = 12;
-const macarraoPreco = 7;
-const ervilhaPreco = 7;
-const arrozPreco = 23;
-const feijaoPreco = 12;
-const vinhoPreco = 70;
-
-let valorTotalRefri = refrigerantePreco * 3;
-let valorTotalMacarrao = macarraoPreco * 4;
-let valorTotalErvilha = ervilhaPreco * 3;
-let valorTotalArroz = arrozPreco * 3;
-let valorTotalFeijao = feijaoPreco * 2;
-let valorTotalVinho = vinhoPreco * 3;
-
-let total = valorTotalArroz + valorTotalErvilha + valorTotalFeijao + valorTotalMacarrao + valorTotalRefri + valorTotalVinho;
-let totalSemVinho = total - valorTotalVinho;
-
-if (total % 2 == 0) {
-    console.log(`O valor total foi par, você paga o vinho sozinho fica ${totalSemVinho / 2} para mim, e o restante para você`);
-} else {
-    console.log(`O valor total deu impar, vamos dividir tudo, ${total / 2} para cada um`);
-}
-```
-
 ## Dicas
 
 - Utilize o operador `%` (módulo) para verificar se o valor é par ou ímpar.
